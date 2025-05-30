@@ -94,10 +94,11 @@ export function trackPerformance() {
   if ('performance' in window) {
     window.addEventListener('load', () => {
       const timing = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming
-      window.gtag('event', 'performance', {
+      window.gtag('event', 'timing_complete', {
+        name: 'load',
         event_category: 'Performance',
         event_label: 'Page Load',
-        value: Math.round(timing.loadEventEnd - timing.navigationStart)
+        value: Math.round(timing.loadEventEnd - timing.startTime)
       })
     })
   }
