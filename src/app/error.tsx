@@ -1,0 +1,15 @@
+'use client'
+
+export default function Error() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      <div className="text-center">
+        <h1 className="text-6xl font-bold text-gray-900 mb-4">500</h1>
+        <p className="text-xl text-gray-600 mb-8">Erro interno do servidor</p>
+        <a href="/" className="text-green-600 hover:text-green-700 font-medium">
+          Voltar para a página inicial
+        </a>
+      </div>
+    </div>
+  )
+} 
