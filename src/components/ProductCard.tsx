@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { StarIcon } from '@heroicons/react/20/solid'
+import { StarIcon } from '@heroicons/react/24/solid'
 
 interface ProductCardProps {
   rank: number
