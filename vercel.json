@@ -1,7 +1,13 @@
 {
   "redirects": [
     {
-      "source": "https://melhores-emagrecedores.com/:path*",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "melhores-emagrecedores.com"
+        }
+      ],
       "destination": "https://www.melhores-emagrecedores.com/:path*",
       "permanent": true
     }
