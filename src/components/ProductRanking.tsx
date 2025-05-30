@@ -53,7 +53,8 @@ export default function ProductRanking() {
                     height={400}
                     className="object-contain mx-auto"
                     priority
-                    quality={85}
+                    quality={75}
+                    sizes="(max-width: 768px) 100vw, 400px"
                     loading="eager"
                   />
                   <p className="text-center text-sm text-[#666] mt-3 italic">
@@ -183,8 +184,9 @@ export default function ProductRanking() {
                     width={400}
                     height={400}
                     className="object-contain mx-auto"
-                    quality={85}
+                    quality={75}
                     loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 400px"
                   />
                   <p className="text-center text-sm text-[#666] mt-3 italic">
                     Ozenvitta: Eficaz no controle do apetite
@@ -294,8 +296,9 @@ export default function ProductRanking() {
                     width={400}
                     height={400}
                     className="object-contain mx-auto"
-                    quality={85}
+                    quality={75}
                     loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 400px"
                   />
                   <p className="text-center text-sm text-[#666] mt-3 italic">
                     SB2 Turbo: Emagrecimento rápido e saudável
@@ -407,8 +410,9 @@ export default function ProductRanking() {
                     width={400}
                     height={400}
                     className="object-contain mx-auto"
-                    quality={85}
+                    quality={75}
                     loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 400px"
                   />
                   <p className="text-center text-sm text-[#666] mt-3 italic">
                     New Detox: Redução de inchaço e desintoxicação
@@ -520,8 +524,9 @@ export default function ProductRanking() {
                     width={400}
                     height={400}
                     className="object-contain mx-auto"
-                    quality={85}
+                    quality={75}
                     loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 400px"
                   />
                   <p className="text-center text-sm text-[#666] mt-3 italic">
                     Mounja Slim: Tecnologia de rápida absorção
@@ -685,7 +690,10 @@ export default function ProductRanking() {
                     width={400}
                     height={400}
                     className="object-contain mx-auto"
-                    quality={85}
+                    priority
+                    quality={75}
+                    sizes="(max-width: 768px) 100vw, 400px"
+                    loading="eager"
                   />
                   <p className="text-center text-sm text-[#666] mt-3 italic">
                     Definamax: Tecnologia avançada para redução de medidas
@@ -712,7 +720,7 @@ export default function ProductRanking() {
                   width={120}
                   height={120}
                   className="object-contain"
-                  quality={85}
+                  quality={75}
                 />
               </div>
               <h4 className="font-semibold text-lg text-[#333] mb-3 text-center">Ozenvitta</h4>
@@ -735,7 +743,7 @@ export default function ProductRanking() {
                   width={120}
                   height={120}
                   className="object-contain"
-                  quality={85}
+                  quality={75}
                 />
               </div>
               <h4 className="font-semibold text-lg text-[#333] mb-3 text-center">SB2 Turbo</h4>
@@ -758,7 +766,7 @@ export default function ProductRanking() {
                   width={120}
                   height={120}
                   className="object-contain"
-                  quality={85}
+                  quality={75}
                 />
               </div>
               <h4 className="font-semibold text-lg text-[#333] mb-3 text-center">New Detox</h4>
@@ -781,7 +789,7 @@ export default function ProductRanking() {
                   width={120}
                   height={120}
                   className="object-contain"
-                  quality={85}
+                  quality={75}
                 />
               </div>
               <h4 className="font-semibold text-lg text-[#333] mb-3 text-center">Mounja Slim</h4>

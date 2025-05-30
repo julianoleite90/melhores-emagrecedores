@@ -47,6 +47,9 @@ export default function Methodology() {
                 width={80}
                 height={80}
                 className="rounded-full w-[80px] h-[80px] md:w-[120px] md:h-[120px] object-cover border-2 md:border-4 border-[#4CAF50]"
+                quality={75}
+                loading="lazy"
+                sizes="(max-width: 768px) 80px, 120px"
               />
             </div>
             <div className="flex-1 pl-4 md:pl-8">

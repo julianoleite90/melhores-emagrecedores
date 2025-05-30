@@ -1,0 +1,33 @@
+export default function Preload() {
+  return (
+    <>
+      <link
+        rel="preload"
+        href="/img/farmacia5-800.webp"
+        as="image"
+        type="image/webp"
+      />
+      <link
+        rel="preload"
+        href="/img/logo.webp"
+        as="image"
+        type="image/webp"
+      />
+      <link
+        rel="preload"
+        href="/img/definamax-400.webp"
+        as="image"
+        type="image/webp"
+      />
+      <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com" 
+      />
+      <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossOrigin="anonymous"
+      />
+    </>
+  )
+} 

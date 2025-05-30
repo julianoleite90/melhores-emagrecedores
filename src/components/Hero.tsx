@@ -26,10 +26,13 @@ export default function Hero() {
               <Image
                 src="/img/farmacia5-800.webp"
                 alt="Farmacêutica analisando produtos"
-                width={800}
-                height={600}
+                width={400}
+                height={300}
                 className="hero-image"
                 priority
+                quality={75}
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="eager"
               />
               <p className="text-center text-sm text-text-light mt-2">
                 Imagem: Editorial
@@ -60,20 +63,20 @@ export default function Hero() {
         </div>
 
         {/* Desktop Layout */}
-        <div className="hidden md:grid md:grid-cols-2 gap-8 items-center">
+        <div className="hidden md:grid md:grid-cols-2 md:gap-8 md:items-center">
           <div>
-            <div className="date-text text-left w-full">
+            <div className="date-text mb-8">
               Atualizado: 15 de março de 2025
             </div>
             
-            <h1 className="hero-title md:text-left">
+            <h1 className="hero-title">
               Os 5 Melhores Remédios Para{' '}
               <span className="underline-text">
                 Emagrecer
               </span>
             </h1>
 
-            <h2 className="hero-subtitle md:text-left">
+            <h2 className="hero-subtitle">
               Pesquisa de Eficácia: <span className="hero-highlight">Remédios Que Combatem o Inchaço</span> e Reduzem Medidas
             </h2>
 
@@ -102,10 +105,13 @@ export default function Hero() {
               <Image
                 src="/img/farmacia5-800.webp"
                 alt="Farmacêutica analisando produtos"
-                width={990}
-                height={743}
+                width={800}
+                height={600}
                 className="hero-image"
                 priority
+                quality={75}
+                sizes="(min-width: 768px) 50vw, 100vw"
+                loading="eager"
               />
             </div>
           </div>

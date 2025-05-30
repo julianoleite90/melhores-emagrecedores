@@ -13,7 +13,10 @@ export default function Header() {
                 width={320}
                 height={80}
                 priority
+                quality={75}
+                sizes="(max-width: 768px) 320px, 280px"
                 className="h-auto w-[320px] md:w-[280px]"
+                loading="eager"
               />
             </a>
           </div>
