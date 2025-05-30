@@ -12,6 +12,20 @@ const utmList = [
   'fbclid'
 ]
 
+// Definir interface para o evento customizado
+interface RedirectEvent extends CustomEvent {
+  detail: {
+    url: string;
+  };
+}
+
+// Declarar o evento customizado
+declare global {
+  interface DocumentEventMap {
+    'redirect_initiated': RedirectEvent;
+  }
+}
+
 // Função para obter todos os parâmetros UTM da URL
 export function getUTMParameters(): Record<string, string> {
   if (typeof window === 'undefined') return {}
@@ -84,7 +98,7 @@ export function initUTMHandler() {
   })
 
   // Adicionar listener para o evento de redirecionamento
-  document.addEventListener('redirect_initiated', function(e: CustomEvent) {
+  document.addEventListener('redirect_initiated', function(e: RedirectEvent) {
     if (e.detail && e.detail.url) {
       e.detail.url = addUTMsToUrl(e.detail.url)
     }
